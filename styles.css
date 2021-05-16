@@ -1,3 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Banner section CSS  */
+.banner {
+  padding: 60px;
+  text-align: center;
+  background: #fabc60;
+  color: black;
+}
+
+/* Navigation section CSS  */
+.navigation {
+  background-color: #e16262;
+  display: flex;
+}
+
+.navigation a {
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:hover {
+  color: black;
+  background-color: #fabc60;
+}
+
+/* Section for the About me and personal details */
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftSection {
+  padding: 20px;
+  background-color: #f1f1f1;
+  flex: 30%;
+}
+
+.rightSection {
+  padding: 20px;
+  background-color: white;
+  flex: 70%;
+}
+
+.image {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Project Section that I've completed  */
+
+.projects {
+  font-size: 1.5rem;
+  padding: 45px;
+  text-align: center;
+  background: #fabc60;
+  color: black;
+}
+
 .centerText {
   text-align: center;
 }
@@ -11,6 +81,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: #caf7e3;
 }
 
 .card {
@@ -19,7 +90,24 @@
   /* margin: 0 1rem; */
 }
 
+.responsive_image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
 .footerContainer {
+  color: white;
   display: flex;
   flex-direction: column;
+  background-color: #e4bad4;
+  background-color: #6c63ff;
+}
+
+@media screen and (max-width: 700px) {
+  .aboutContainer,
+  .navigation,
+  .cardContainer {
+    flex-direction: column;
+  }
 }

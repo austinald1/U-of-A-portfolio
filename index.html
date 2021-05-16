@@ -5,33 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Austin's Portfolio</title>
   </head>
-  <body class="bodyContainer">
+  <body>
+    <!-- Header Section -->
     <header>
-      <nav>
-        <div class="centerText">Austin Alderete</div>
-      </nav>
+      <div class="banner">
+        <h2>Austin Alderete</h2>
+      </div>
+
+      <!-- Navigation Bar Section -->
+      <nav class="navigation">
+        <a href="#aboutMe">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#teamwork">Teamwork</a>
+        <a href="#projects">Projects</a>
+        <a href="#contactMe">Contact Me</a>
+      </div>
     </header>
-    <div class="cardContainer">
-      <div class="card">
-        <div>About Me</div>
-        <div>img</div>
-        <div>text to add in</div>
+
+    <!-- Content Section -->
+    <div class="aboutContainer">
+      <div id="aboutMe" class="leftSection">
+        <h3>About Me</h3>
+        <h6>Profile Photo:</h6>
+        <img src="./assets/images/profile.jpg" class="responsive_image" alt="">
+        <p>I enjoy the outdoors and any adrenaline seeking adventure.</p>
       </div>
-      <div class="card">
-        <div>Experience</div>
-        <div>img</div>
-        <div>text to add in</div>
-      </div>
-      <div class="card">
-        <div>Fancy Stuff</div>
-        <div>img</div>
-        <div>text to add in</div>
+      <div id="experience" class="rightSection">
+        <h3>Experience</h3>
+        <img
+          class="responsive_image"
+          src="./assets/images/visual_data_re_mxxo.svg"
+          alt=""
+        />
+        <p>
+          I have multiple years in the commercial contsruction industry.
+          I specialize in machine control and onsite engineering with 
+          three-dimensional surfaces. Now I am currently progressing into
+          full stack web development.
+        </p>
+        <br />
+        <h3 id="teamwork">Teamwork</h3>
+        <img
+          class="responsive_image"
+          src="./assets/images/Development_re_g5hq.svg"
+          alt=""
+        />
+        <p>
+          Skilled leader with an open mind and constantly trying to learn 
+          and guide others.
+        </p>
       </div>
     </div>
-    <footer class="footerContainer">
-      <div class="centerText">How to Contact Me</div>
-    </footer>
+
+    <!-- Projects Section -->
+    <div id="projects" class="projects">
+      Projects
+    </div>
+    <div class="cardContainer">
+      <div class="card">
+        <h2>Horiseon</h2>
+        <a href="https://github.com/austinald1/horiseon">
+          Entering the Web Development atmosphere 
+        </a>
+        <a href="https://github.com/austinald1/horiseon">
+          <img
+            src="./assets/images/Design_feedback_re_8gtk.svg"
+            alt=""
+            class="responsive_image"
+          />
+      </a>
+      </div>
+      <div class="card">
+        <h2>Run Buddy</h2>
+        <a href="https://github.com/austinald1/robot-gladiators">
+          Week 1 Refactor Challenge
+        </a>
+        <a href="https://github.com/austinald1/robot-gladiators">
+          <img
+          class="responsive_image"
+          src="./assets/images/undraw_visual_data_re_mxxo.svg"
+          alt=""
+          />
+        </a>
+      </div>
+      <div class="card">
+        <h2>Portfolio</h2>
+        <a href="https://github.com/austinald1/U-of-A-portfolio">
+          Advanced CSS Portfolio
+        </a>
+        <a href="https://github.com/austinald1/U-of-A-portfolio">
+          <img
+          class="version_control responsive_image"
+          src="./assets/images/undraw_version_control_re_mg66.svg"
+          alt=""
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footerContainer">
+      <h2 id="contactMe" class="centerText">How to Contact Me</h2>
+      <a class="centerText" href="https://github.com/austinald1">Austin's github</a>
+      <p class="centerText">(469)-516-6895</p>
+    </div>
   </body>
 </html>
